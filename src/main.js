@@ -21,7 +21,8 @@ app.use(router);
 app.use(ElementPlus, {
   locale: zhCn
 });
-//全局注册组件
+
+//全局注册组件，<svg-icon></svg-icon>
 app.component('SvgIcon', SvgIcon);
 
 app.mount('#app');

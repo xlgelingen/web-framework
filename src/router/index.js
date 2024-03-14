@@ -26,11 +26,11 @@ appRouter.firstInit = false;
 
 //beforeEach 导航守卫，用于在每次路由切换之前执行一些逻辑
 appRouter.beforeEach(async (to, from, next) => {
-  //启动了进度条 NProgress.start()；
+  //启动了进度条 NProgress.start()；以提示用户当前页面正在加载中。
   NProgress.start();
 
   //设置了页面的标题，根据路由元信息中的 title 字段
-  if (to.meta.title) document.title = to.meta.title;
+  if (to.meta.nav.title) document.title = to.meta.nav.title;
 
   const store = useStore();
   const token = cookies.get(TOKEN_KEY);

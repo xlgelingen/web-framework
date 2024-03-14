@@ -8,10 +8,12 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+
   plugins: [
     vue(),
+
     createSvgIconsPlugin({
-/* 指定需要缓存的图标文件夹 */
+/* 指定需要缓存的图标文件夹:  @/assets/images/icons*/
       // eslint-disable-next-line no-undef
       iconDirs: [path.resolve(__dirname, 'src/assets/images/icons')],
       //或者：二选一
@@ -21,7 +23,9 @@ export default defineConfig({
 生成的 symbolId 将会包含图标的文件夹名称和图标的名称，用于在 SVG Sprite 中唯一标识一个图标 */
       symbolId: 'icon-[dir]-[name]'
     }),
+    
   ],
+
   resolve: {
     alias: {
 /* 作用就是：用 @ 符号来代替 src 目录*/
