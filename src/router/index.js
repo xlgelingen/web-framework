@@ -30,7 +30,7 @@ appRouter.beforeEach(async (to, from, next) => {
   NProgress.start();
 
   //设置了页面的标题，根据路由元信息中的 title 字段
-  if (to.meta.nav.title) document.title = to.meta.nav.title;
+  if (to.meta.nav?.title) document.title = to.meta.nav.title;
 
   const store = useStore();
   const token = cookies.get(TOKEN_KEY);

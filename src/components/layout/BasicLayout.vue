@@ -1,5 +1,4 @@
 <script setup>
-import { RouterView } from 'vue-router';
 import BasicLayoutHeader from './BasicLayoutHeader.vue';
 import BasicLayoutFooter from './BasicLayoutFooter.vue';
 </script>
@@ -7,7 +6,7 @@ import BasicLayoutFooter from './BasicLayoutFooter.vue';
 <template>
   <div class="page-basic-layout">
     <BasicLayoutHeader class="page-basic-header" />
-    <RouterView class="page-basic-body" />
+    <router-view class="page-basic-body" />
     <BasicLayoutFooter class="page-basic-footer" />
   </div>
 </template>

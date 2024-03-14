@@ -5,6 +5,6 @@
       通过name查询ID：xx就是文件名；xx-xx就是目录-文件名
       指定文件和查询ID格式都是在vite.config.js通过createSvgIconsPlugin({...})设置的
     -->
-    <svg-icon name="ii-logo" width="64px" height="64px"></svg-icon>
+    <svg-icon name="logo" width="64px" height="64px"></svg-icon>
   </div>
 </template>
